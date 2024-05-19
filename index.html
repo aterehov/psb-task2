@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Калькулятор</title>
+
+    <link rel="stylesheet" href="calc.css" />
+    <script type="text/javascript" src="calc.js" defer></script>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <td id="exp" colspan="4"></td>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td colspan="2">
+            <button onclick="clear_exp()">Очистить всё</button>
+          </td>
+          <td colspan="2">
+            <button onclick="backspace()">Стереть символ</button>
+          </td>
+        </tr>
+        <tr>
+          <td><button onclick="add_to_exp('7')">7</button></td>
+          <td><button onclick="add_to_exp('8')">8</button></td>
+          <td><button onclick="add_to_exp('9')">9</button></td>
+          <td><button onclick="add_to_exp('*')">*</button></td>
+        </tr>
+
+        <tr>
+          <td><button onclick="add_to_exp('4')">4</button></td>
+          <td><button onclick="add_to_exp('5')">5</button></td>
+          <td><button onclick="add_to_exp('6')">6</button></td>
+          <td><button onclick="add_to_exp('-')">-</button></td>
+        </tr>
+
+        <tr>
+          <td><button onclick="add_to_exp('1')">1</button></td>
+          <td><button onclick="add_to_exp('2')">2</button></td>
+          <td><button onclick="add_to_exp('3')">3</button></td>
+          <td><button onclick="add_to_exp('+')">+</button></td>
+        </tr>
+
+        <tr>
+          <td onclick="add_to_exp('0')"><button>0</button></td>
+          <td onclick="exp_eval()"><button>=</button></td>
+          <td><button onclick="add_to_exp('.')">.</button></td>
+          <td><button onclick="add_to_exp('/')">/</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
